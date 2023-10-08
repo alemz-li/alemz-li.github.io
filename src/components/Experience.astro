@@ -1,0 +1,19 @@
+---
+import {experience} from "../lib/data.js";
+
+---
+
+<section class="mb-8">
+  <h2 class="font-extralight mb-2">Work Experience</h2>
+  {experience.map(job => (
+    <div class="flex">
+      <div class="flex-none w-24 text-gray-400 text-sm min-w-fit mr-8">
+        <span>{job.period}</span>
+      </div>
+      <div class="flex-1 text-gray-300">
+        <h3 class="text-white">{job.role}</h3>
+        <p class="text-sm">{job.description}</p>
+      </div>
+    </div>
+  ))}
+</section>

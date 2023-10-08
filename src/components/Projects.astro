@@ -1,0 +1,27 @@
+---
+import { projects } from "../lib/data.js"
+import arrowSvg from "../../public/arrow.svg"
+---
+<section>
+  <h2 class="font-extralight mb-2">Side Projects</h2>
+  {projects.map((project) => {
+    return <div class="flex mb-4">
+      <div class="flex-none w-24 mr-8">
+        {project.repo && <a class="text-xs" rel="noopener noreferrer" target="_blank" href={project.repo}><span class="hover:text-gray-300">Github Repo</span> <img class="inline w-3 h-3" src={arrowSvg.src} alt="link"/></a>}
+      </div>
+      <div class="text-gray-400 mb-2 flex-1">
+        { project.demo ?
+          (<a href={project.demo} rel="noopener noreferrer" target="_blank">
+            <h3 class="font-semibold mb-1 text-white text-lg hover:text-gray-300">{project.name} <img class="inline mx-2 w-4 h-4" src={arrowSvg.src} alt="link"/></h3>
+          </a>)
+          :
+          (<h3 class="font-semibold mb-1 text-white text-lg">{project.name}</h3>)
+        }
+        <p class="mb-1 text-sm">{project.description}</p>
+        <small class="text-xs text-gray-500">{project.tech.join(" - ")}</small>
+      </div>
+    </div>
+  })}
+</section>
+
+

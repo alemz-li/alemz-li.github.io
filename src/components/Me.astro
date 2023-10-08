@@ -1,0 +1,23 @@
+---
+const dob = new Date("1996-01-03");
+const currentDate = new Date();
+
+let age = currentDate.getFullYear() - dob.getFullYear();
+if (currentDate.getMonth() < dob.getMonth() || (currentDate.getMonth() === dob.getMonth() && currentDate.getDate() < dob.getDate())) {
+    age--;
+}
+---
+
+<header class="mx-4 flex items-center p-8">
+  <div class="mr-8 shrink-0 grow-0">
+    <img 
+      class="inline-block h-24 w-24 ring-2 ring-neutral-900 shadow-md rounded-full object-cover object-center"
+      src="me.jpg" alt="profile-picture" />
+  </div>
+  <div class="font-light text-gray-300 text-sm">
+    <h1 class="text-md font-semibold text-white text-xl">Alejandro Meza Zamora</h1>
+    <p>Full Stack Developer</p>
+    <p>Node.js Developer</p>
+    <span>{age} years old</span>
+  </div>
+</header>
