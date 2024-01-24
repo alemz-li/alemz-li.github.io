@@ -7,13 +7,11 @@ export const skills = [
   "Node.js",
   "Git",
   "Express",
-  "Redux",
   "React",
-  "React Query",
-  "Tailwindcss",
+  "State Management",
+  "TailwindCss",
   "MongoDB",
-  "Mongoose",
-  "Prisma",
+  "SQL and NoSQL w/ORM",
   "Parcel",
   "Astro",
 ];
@@ -29,22 +27,8 @@ export const experience = [
 
 export const projects = [
   {
-    name: "Lydia: Code Bites",
-    description: "Platform for saving and sharing your code snippets",
-    tech: [
-      "React",
-      "React Query",
-      "Node.js",
-      "MongoDB",
-      "Express",
-      "Tailwindcss",
-    ],
-    repo: "https://github.com/alemz-li/lydia",
-    demo: null,
-  },
-  {
     name: "Find Flick",
-    description: "Get a random movie suggestion",
+    description: "Get a random movie suggestion using TMDB API",
     tech: ["Typescript", "React", "Express", "REST API"],
     repo: "https://github.com/alemz-li/find-flick",
     demo: "https://find-flick.onrender.com/",
@@ -52,7 +36,7 @@ export const projects = [
   {
     name: "Personal Movie Collection Site",
     description: "Website showcasing movies I own",
-    tech: ["React", "React Query", "Node.js", "MongoDB", "Express"],
+    tech: ["MongoDB", "Express", "React", "React Query"],
     repo: "https://github.com/alemz-li/movie-collection",
     demo: "https://alemz-collection.onrender.com/",
   },
