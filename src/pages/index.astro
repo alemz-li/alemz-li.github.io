@@ -1,20 +1,18 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 import Me from "../components/Me.astro";
 import About from "../components/About.astro";
-import Buttons from "../components/Buttons.astro"
-import Skills from "../components/Skills.astro"
-import Experience from "../components/Experience.astro"
-import Projects from "../components/Projects.astro"
+import Skills from "../components/Skills.astro";
+import Experience from "../components/Experience.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout title="Alejandro's Portfolio | Full Stack Developer">
-  <main class="text-gray-100 container mx-auto px-4 max-w-lg">
+  <main class="m-auto max-w-xl px-4 text-neutral-200">
     <Me />
     <About />
-    <Buttons />
-    <Skills />
     <Experience />
+    <Skills />
     <Projects />
   </main>
 </Layout>

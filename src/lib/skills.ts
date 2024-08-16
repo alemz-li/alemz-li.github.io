@@ -1,0 +1,25 @@
+export const skills = {
+  frontend: [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "React",
+    "Next.js",
+    "Redux",
+    "RTK Query",
+    "React-hook-form",
+    "Tailwindcss",
+    "shadcn",
+  ],
+  backend: [
+    "Node.js",
+    "Express",
+    "Typescript",
+    "Multer",
+    "Zod",
+    "Prisma ORM",
+    "Mongoose ODM",
+  ],
+  database: ["Postgres", "Mongo"],
+  other: ["Git", "Zoho", "Docker", "Astro"],
+};

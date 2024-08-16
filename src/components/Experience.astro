@@ -1,19 +1,22 @@
 ---
-import {experience} from "../lib/data.js";
-
+import { experience } from "../lib/experience";
 ---
 
 <section class="mb-8">
-  <h2 class="font-extralight mb-2">Work Experience</h2>
-  {experience.map(job => (
-    <div class="flex">
-      <div class="flex-none w-24 text-gray-400 text-sm min-w-fit mr-8">
-        <span>{job.period}</span>
+  <h2 class="mb-2 font-bold text-white">Work Experience</h2>
+  {
+    experience.map((job) => (
+      <div class="flex">
+        <div class="mr-8 w-24 min-w-fit">
+          <span class="font-light">{job.period}</span>
+        </div>
+        <div class="flex-1">
+          <h3 class="mb-2 font-semibold tracking-tight text-white">
+            {job.role}
+          </h3>
+          <p>{job.description}</p>
+        </div>
       </div>
-      <div class="flex-1 text-gray-300">
-        <h3 class="text-white tracking-tight">{job.role}</h3>
-        <p class="text-sm">{job.description}</p>
-      </div>
-    </div>
-  ))}
+    ))
+  }
 </section>
